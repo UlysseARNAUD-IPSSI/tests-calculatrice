@@ -18,9 +18,9 @@ test('Divise -25 par -5 pour obtenir 5', () => {
 });
 
 test('Divise un nombre positif par zero afin d\'obtenir une erreur.', () => {
-    expect(Division(Math.floor(Math.random() * 100) + 1, 0)).toThrow(DividedByZeroError);
+    expect(() => Division(Math.floor(Math.random() * 100) + 1, 0)).toThrow();
 });
 
 test('Divise un nombre négatif par zero afin d\'obtenir une erreur.', () => {
-    expect(Division((Math.floor(Math.random() * 100) + 1) * -1, 0)).toThrow(DividedByZeroError);
+    expect(() => Division((Math.floor(Math.random() * 100) + 1) * -1, 0)).toThrow();
 });
