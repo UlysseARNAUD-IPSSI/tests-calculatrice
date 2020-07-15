@@ -1,20 +1,21 @@
 const Division = require('.');
 const DividedByZeroError = require('../Errors/DividedByZeroError');
 
+
 test('Divise 25 par 5 pour obtenir 5', () => {
-    expect(Division(25, 5)).toBe(5);
+    expect(() => Division(25, 5)).toBe(5);
 });
 
 test('Divise -25 par 5 pour obtenir -5', () => {
-    expect(Division(-25, 5)).toBe(-5);
+    expect(() => Division(-25, 5)).toBe(-5);
 });
 
 test('Divise 25 par -5 pour obtenir -5', () => {
-    expect(Division(25, -5)).toBe(-5);
+    expect(() => Division(25, -5)).toBe(-5);
 });
 
 test('Divise -25 par -5 pour obtenir 5', () => {
-    expect(Division(-25, -5)).toBe(5);
+    expect(() => Division(-25, -5)).toBe(5);
 });
 
 test('Divise un nombre positif par zero afin d\'obtenir une erreur.', () => {
