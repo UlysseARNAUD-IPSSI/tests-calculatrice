@@ -4,4 +4,5 @@
 
 node_modules
 
-package-lock.json
+# npm ci utilise ce fichier (commande utilisée pour Github Workflow)
+# package-lock.json
