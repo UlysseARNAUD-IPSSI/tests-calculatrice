@@ -1,5 +1,3 @@
-module.exports = Addition;
-
 /**
  * @param a number
  * @param b number
@@ -8,3 +6,5 @@ module.exports = Addition;
 function Addition (a, b) {
     return a + b;
 }
+
+module.exports = Addition;
